@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans:wght@300&family=Suravaram&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.nav-bar{
+    width:100vw;
+    height:4rem;
+    background:#ffffff;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    font-family: 'Noto Sans', sans-serif;
+    box-shadow: 0 -12px 39px rgb(0 32 54);;
+}
+
+.nav-center{
+    width:70vw;
+    max-width:700px;
+   display:flex;
+   flex-direction:row;
+   justify-content:space-between;
+   align-items:center;
+}
+.nav-center h2{
+    text-transform:capitalize;
+    color:#3f93fb;
+    letter-spacing:0.1rem;
+    font-weight:700;
+    font-size : 1.3rem;
+}
+.nav-center ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+.nav-center a{
+    text-decoration:none;
+    color:black;
+    font-size:1.25rem;
+    font-weight:700;
+}
+.nav-center a:hover{
+    color:#3f93ff;
+}
+.nav-center li{
+    list-style:none;
+    margin:0 0.4rem;
+}
+
+/*------main--------*/
+main{
+    width:100vw;
+    height:85vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+.container{
+    width:60vw;
+    max-width:700px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.container h2{
+    background:black;
+    color:white;
+    font-size:3rem;
+    font-family: 'EB Garamond', serif;
+    letter-spacing:0.2rem;
+    text-transform:capitalize;
+    padding: 1rem 0.7rem;
+    border-radius:0.4rem;
+    line-height: 3rem;
+}
+.container h2 span{
+    color:#23c2ff;
+    font-family: 'Suravaram', serif;
+}
+#btn{
+    margin:2rem 0rem;
+    width:7.5rem;
+    height:3rem;
+    font-size:1.2rem;
+    text-transform:uppercase;
+    font-weight:700;
+    background:transparent;
+    border-radius:0.5rem;
+    cursor:pointer;
+}
+#btn:hover{
+    color:white;
+    background:black;
+}

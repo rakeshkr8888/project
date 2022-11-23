@@ -1,0 +1,110 @@
+/* Reset */
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Nuosu SIL', serif;
+}
+
+body {
+        
+        line-height: 1.5;
+        background: #f3f3f3;
+      }
+
+/* utilities */
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Staatliches", cursive;
+  /* margin-bottom: 0.55rem; */
+  font-size: 2rem;
+  margin: 0 3.5rem 0.55rem;
+  line-height: 1.3;
+}
+
+.subject {
+        display: inline-block;
+        color: #333;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0.2rem;
+      }
+
+
+img{
+        width: 100%;
+}
+ .py-2{
+         padding: 2rem 0;
+ }
+
+
+ .card {
+        background: #fff;
+        padding: 1rem;
+        justify-content: center;
+      }
+
+
+header{
+
+    margin: 0 3.5rem 1.5rem;
+}
+
+
+/* Navbar */
+
+
+
+#navbar .navbar{
+        display: flex;
+        float: right;
+}
+
+#navbar ul{
+        list-style: none;
+}
+
+#navbar ul li{
+        margin-left: 1rem;
+}
+
+#navbar ul li a{
+        text-decoration: none;
+        padding: 1rem;
+}
+
+#navbar ul li a.current{
+        /* background: gray; */
+        border-bottom: 3px #fff solid;
+}
+
+
+/* Home Subject */
+
+#home-subject .subject-container{
+        margin: 0 3.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+}
+
+/* hover and active */
+.linear-image
+/* Footer */
+
+footer{
+        text-align: center;
+        padding: 1.5rem;
+}
