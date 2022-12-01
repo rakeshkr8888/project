@@ -1,0 +1,16 @@
+{
+  "name": "gym_website_contact_form",
+  "version": "1.0.0",
+  "description": "this is contact form for Gym website and is made with express, pug",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rakesh singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,27 @@
+doctype
+html 
+    head
+        title GYM contact form
+        style 
+            include ../static/index.css
+    body 
+        nav
+            div(class="nav-center")
+                ul 
+                    li #[a(href="/") Home]
+                    li #[a(href="/about") About]
+                    li #[a(href="/contact") Contact]
+        main 
+            div(class="container") 
+                h3 get this gym membership for $60 and fill this form now!
+                form(class="contact-form" action="/" method="post")
+                    input(type="text" name="name" id="name" placeholder="enter your name")
+                    input(type="text" name="phone_no" id="phone_no" placeholder="enter phone number")
+                    input(type="number" name="age" id="age" placeholder="enter your age")
+                    select(name="gender" id="gender")
+                        option(value="male") male
+                        option(value="female") female
+                        option(value="other") other
+                    textarea(name="address" id="address" rows=7 cols=32 placeholder="enter your address")
+                    textarea(name="about" id="about" rows=7 cols=32 placeholder="enter more about you")
+                    button(class="btn") submit
