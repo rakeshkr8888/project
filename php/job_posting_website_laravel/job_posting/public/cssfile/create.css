@@ -1,0 +1,113 @@
+:root{
+    --color-primary:rgb(196, 59, 59);
+    --color-success:#00bf8e;
+    --color-warning:#f7c94b;
+    --color-danger:#f75842;
+    --color-danger-variant:rgba(247,88,66,0.4);
+    --color-white:#fff;
+    --color-light:rgba(255,255,255,0.7);
+    --color-black:#000;
+    --color-bg:rgb(244, 231, 231);
+
+    --container-width-lg:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition:all 400ms ease;
+}
+
+div{
+    display: inline-block;
+}
+
+/*===========================HEADER =============================*/
+header{
+    height:fit-content;
+    margin:1.2rem 0;
+}
+
+.header_container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.create_form{
+    margin:0 2.4rem;
+}
+
+.create_form form{
+    display:flex;
+    flex-direction:column;
+    gap:1.2rem;
+}
+
+
+.create_form form .form_item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:0.5rem;
+}
+
+.create_form form .form_item .input{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:1rem;
+}
+
+.create_form form .form_item .error{
+    color:var(--color-danger);
+    font-size:0.8rem;
+}
+
+.create_form form .form_item label{
+    font-weight:500;
+}
+
+.create_form form .form_item input,textarea{
+    border:1px solid var(--color-black);
+    border-radius:0.5rem;
+    padding:0.3rem 2rem;
+}
+
+.create_form form .btn{
+    margin:auto;
+}
+
+
+.flash_message{
+    background:green;
+    height:fit-content;
+    width:14rem;
+    position:absolute;
+    top:0;
+    left:40%;
+    padding:1rem 1.3rem;
+    text-align:center;
+    transition:var(--transition);
+    border:1px solid var(--color-black);
+}
+
+.flash_message p{
+    color:var(--color-white);
+}
+
+/*==========================Mobile==========================*/
+@media screen and (max-width:650px){
+    .input{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+
+    .create_form form .form_item input,textarea{
+        padding:0.3rem 1rem;
+    }
+
+    .flash_message{
+        left:20%;
+    }
+}

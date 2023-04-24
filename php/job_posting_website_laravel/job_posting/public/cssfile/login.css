@@ -1,0 +1,61 @@
+:root{
+    --color-primary:rgb(196, 59, 59);
+    --color-success:#00bf8e;
+    --color-warning:#f7c94b;
+    --color-danger:#f75842;
+    --color-danger-variant:rgba(247,88,66,0.4);
+    --color-white:#fff;
+    --color-light:rgba(255,255,255,0.7);
+    --color-black:#000;
+    --color-bg:rgb(244, 231, 231);
+
+    --container-width-lg:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition:all 400ms ease;
+}
+
+/*==========================Login===================*/
+.login_container{
+    text-align:center;
+}
+
+.login_container form{
+    margin-top:1rem;
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+}
+
+
+ form .form_item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:0.6rem;
+}
+
+form .form_item .input{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:1rem;
+}
+
+form .form_item .error{
+    color:var(--color-danger);
+    font-size:0.8rem;
+}
+
+.login_container form input{
+    border:1px solid var(--color-black);
+    padding:0.4rem 0.9rem;
+    border-radius:0.6rem;
+}
+
+.login_container form button{
+    display:block;
+    margin:1rem auto;
+    text-align:center;
+}

@@ -1,0 +1,71 @@
+:root{
+    --color-primary:rgb(196, 59, 59);
+    --color-success:#00bf8e;
+    --color-warning:#f7c94b;
+    --color-danger:#f75842;
+    --color-danger-variant:rgba(247,88,66,0.4);
+    --color-white:#fff;
+    --color-light:rgba(255,255,255,0.7);
+    --color-black:#000;
+    --color-bg:rgb(244, 231, 231);
+
+    --container-width-lg:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition:all 400ms ease;
+}
+
+/*=========================HEADER======================*/
+header{
+    height:fit-content;
+    margin:1.4rem 0;
+}
+
+.header_container{
+    text-align:center;
+}
+
+.manage_container div:nth-child(1){
+    display:flex;
+    justify-content:center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.manage_container div table th,td{
+    border:1px solid var(--color-black);
+}
+
+.manage_container div table tr{
+    height:2.8rem;
+}
+
+.manage_container div table tr th{
+    text-align:center;
+    padding:1rem;
+}
+
+.manage_container div table tr td{
+    text-align:center;
+    padding:0.7rem 1rem;
+}
+
+.flash_message{
+    background:green;
+    height:fit-content;
+    width:14rem;
+    position:absolute;
+    top:0;
+    left:40%;
+    padding:1rem 1.3rem;
+    text-align:center;
+    transition:var(--transition);
+    border:1px solid var(--color-black);
+}
+
+.flash_message p{
+    color:var(--color-white);
+}
